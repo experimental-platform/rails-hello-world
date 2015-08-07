@@ -1,5 +1,5 @@
 class HelloWorldController < ApplicationController
   def index
-    render text: "Hello World"
+    render text: `echo $(screen --version)`
   end
 end
